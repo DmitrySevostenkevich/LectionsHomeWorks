@@ -1,6 +1,6 @@
-package org.example.lesson1.homework;
+package org.example.lesson1;
 
-public class Lesson1 {
+public class Lection1homeworl {
     public static void main(String[] args) {
         System.out.println("               РУБАИ");
         System.out.println("Много лет размышлял я над жизнью земной.");
