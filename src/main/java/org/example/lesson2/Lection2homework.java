@@ -1,6 +1,6 @@
-package org.example.lesson1.homework;
+package org.example.lesson2;
 
-public class Lesson2 {
+public class Lection2homework {
     public static void main(String[] args) {
         byte a = 0b1100;
         System.out.println(a);
