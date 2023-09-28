@@ -31,7 +31,7 @@ public class PrimitiveDataTypes {
 
         char с5 = 400;
 
-        char c6 = '\u005d';
+        char c6 = '\u0000';
         System.out.println(c6);
 
         boolean bool1 = true;
