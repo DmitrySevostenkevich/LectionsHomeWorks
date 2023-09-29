@@ -7,9 +7,9 @@ public class Student {
     String name;
     int numberTicket;
     int course;
-    Double averageEconomic = 0.0;
-    Double averageMathematic = 0.0;
-    Double averageEnglish = 0.0;
+    double averageEconomic;
+    double averageMathematic;
+    double averageEnglish;
 
     public Student(String sureName, String name, int numberTicket, int course, double averageEconomic, double averageMathematic,double averageEnglish) {
         this.sureName = sureName;
