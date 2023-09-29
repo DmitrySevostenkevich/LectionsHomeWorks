@@ -1,7 +1,5 @@
 package org.example.lesson4.homework;
 
-import java.sql.SQLOutput;
-
 public class Student {
     String sureName;
     String name;
@@ -32,5 +30,9 @@ public class Student {
         System.out.println("Студент " + this.sureName + " средняя арифметическая оценка " + (this.averageMathematic+this.averageEnglish+this.averageEconomic)/3 );
     }
 
-}
+    public double srednyaOcenka(double averageMathematic, double averageEnglish, double averageEconomic){
+        double result = (averageEconomic+averageEnglish+averageMathematic)/3;
+        return result;
+    }
+    }
 
