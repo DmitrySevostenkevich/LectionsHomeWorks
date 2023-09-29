@@ -29,10 +29,5 @@ public class Student {
     public void lern(){
         System.out.println("Студент " + this.sureName + " средняя арифметическая оценка " + (this.averageMathematic+this.averageEnglish+this.averageEconomic)/3 );
     }
-
-    public double srednyaOcenka(double averageMathematic, double averageEnglish, double averageEconomic){
-        double result = (averageEconomic+averageEnglish+averageMathematic)/3;
-        return result;
-    }
     }
 
