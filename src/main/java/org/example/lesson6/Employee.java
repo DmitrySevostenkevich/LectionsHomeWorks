@@ -6,7 +6,7 @@ public class Employee {
     Employee(int id2,String sureName2, int age2){
         this(id2,sureName2,age2,0.0,"null");
     }
-    Employee(String sureName3,int age3) {
+    public Employee(String sureName3,int age3) {
         this(0,sureName3,age3,0.0,"null");
     }
     Employee(int id4,String sureName4,int age4,double salary4,String department4){
