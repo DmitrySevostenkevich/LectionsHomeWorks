@@ -4,20 +4,39 @@ package org.example.lesson7.homework;
  переменная sureName была  доступна отовсюду
  а переменная id только внутри пакета.
  Так же создайте 3 public метода которые будут показывать на дисплее значения этих переменных.
- Создайте для данного класа 3 разных конструктора с public,default private acces modifier-ами
+ Создайте для данного класса 3 разных конструктора с public,default private acces modifier-ами
  В конструкторах присваивайте переменным класа значения из параметров
  Создайте новые классы в том же и другом пакете
- Попытайтесь в них создать обьекты класса Employee и вывести на экран значения переменных данного обьекта с помощью метода println и методов самого классаю
+ Попытайтесь в них создать обьекты класса Employee и вывести на экран значения переменных данного обьекта с помощью метода println и методов самого класса.
  */
 public class Employee {
-    private double salary = 5000.7;
+    private double salary = 5000.95;
     public String sureName = "Ivanov";
     int id = 5;
-    public void salary(double salary){
-        System.out.println(salary);
+
+    public void salary(){
+        System.out.println("Зарплата = " + salary);
+    }
+    public void sureName(){
+        System.out.println("Фамилия - " + sureName);
+    }
+    public void id(){
+        System.out.println("Номер клиента - " + id);
+    }
+    public Employee(double salary, String sureName, int id) {
+        this.salary = salary;
+        this.sureName = sureName;
+        this.id = id;
+    }
+    class Test{
+        Employee employee1 = new Employee();
+
     }
     public static void main(String[] args) {
-
+        Employee employee = new Employee(4585,"Petrov",45);
+        employee.salary();
+        employee.sureName();
+        employee.id();
     }
 }
 
