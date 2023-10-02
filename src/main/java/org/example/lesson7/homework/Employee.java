@@ -1,4 +1,5 @@
 package org.example.lesson7.homework;
+
 /*
  Пересоздайте класс  Employee таким образом что бы переменная salary была недоступна вне класса
  переменная sureName была  доступна отовсюду
