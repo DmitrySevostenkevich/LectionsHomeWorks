@@ -23,7 +23,7 @@ public class Employee {
         System.out.println("Фамилия - " + sureName);
     }
 
-    public void id() {
+    public void getId() {
         System.out.println("Номер клиента - " + id);
     }
 
