@@ -10,33 +10,26 @@ package org.example.lesson7.homework;
  Попытайтесь в них создать обьекты класса Employee и вывести на экран значения переменных данного обьекта с помощью метода println и методов самого класса.
  */
 public class Employee {
-    private double salary = 5000.95;
-    public String sureName = "Ivanov";
-    int id = 5;
+    private double salary;
+    public String sureName;
+    int id;
 
-    public void salary(){
+    public void salary() {
         System.out.println("Зарплата = " + salary);
     }
-    public void sureName(){
+
+    public void sureName() {
         System.out.println("Фамилия - " + sureName);
     }
-    public void id(){
+
+    public void id() {
         System.out.println("Номер клиента - " + id);
     }
+
     public Employee(double salary, String sureName, int id) {
         this.salary = salary;
         this.sureName = sureName;
         this.id = id;
-    }
-    class Test{
-        Employee employee1 = new Employee();
-
-    }
-    public static void main(String[] args) {
-        Employee employee = new Employee(4585,"Petrov",45);
-        employee.salary();
-        employee.sureName();
-        employee.id();
     }
 }
 
