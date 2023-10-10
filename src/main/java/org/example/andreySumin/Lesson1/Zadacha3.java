@@ -15,12 +15,14 @@ public class Zadacha3 {// обявляем публичный класс Zadacha
     public static void main(String[] args) {// создаем метод main
         Scanner scanner = new Scanner(System.in);//создаем новый обьект класса Сканер
         System.out.println("Введите сумму вклада");//выводим на экран Введите сумму вклада
-        float a = scanner.nextFloat();// ждем ввода от пользователя
+        float amount = scanner.nextFloat();// ждем ввода от пользователя
         System.out.println("Введите срок вклада");//выводим на экран Введите срок вклада
-        int b = scanner.nextInt();//ждем ввода от пользователя
-        for (float c = 1;c<2 ;){// создаем цикл
-            float s = a + (a * 100/7);//
-            System.out.println(s);//
+        int monthCount = scanner.nextInt();//ждем ввода от пользователя
+        System.out.println("Введите сумму ежемесячного пополнения");//выводим на экран Введите срок вклада
+        float summPopolneniya = scanner.nextFloat();
+        for (int c = 0;c<monthCount;c++){// создаем цикл
+            amount = amount + summPopolneniya + (amount / 100 * 15 / 12);//
+            System.out.println(amount);//
         }
         }
 }
